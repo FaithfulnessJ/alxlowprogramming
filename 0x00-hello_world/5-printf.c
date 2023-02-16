@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
- *main - A program that ornts a line using a pint f function
- *return: 0 (Success)
+ * main - Entry point
+ *
+ * Return: always 0
  */
 int main(void)
 {
-printf("with proper grammar, but the outcome is a piece of art,\n");
-return (0);
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+	return (0);
 }
-
