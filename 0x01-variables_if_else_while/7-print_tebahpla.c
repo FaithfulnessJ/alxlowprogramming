@@ -6,14 +6,9 @@
 
 int main(void)
 {
-char a;
-
-a = 'z';
-while
-	(c >= 'a') {
-		putchar(c);
-		c--;
-	}
+char letter;
+for (letter = 'z'; letter >= 'a'; letter--)
+putchar(letter);
 putchar('\n');
 return (0);
 }
