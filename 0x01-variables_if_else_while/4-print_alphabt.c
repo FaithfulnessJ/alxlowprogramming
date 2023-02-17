@@ -6,14 +6,10 @@
 
 int main(void)
 {
-char a;
-a = 'g';
-while
-(a <= 'z') {
-if ((a != 'q' && a !=  'e') && a <= 'z')
-putchar(a);
-a++;
-}
+char letter;
+for (letter = 'a'; letter <= 'z'; letter++)
+if (letter != 'q' && letter != 'e')
+putchar(letter);
 putchar('\n');
 return (0);
 }
