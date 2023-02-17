@@ -6,21 +6,13 @@
 
 int main(void)
 {
-char a;
-int b;
+int num;
+char letter;
 
-a = 'c';
-b = 0;
-while
-	(b < 10) {
-		putchar(b + '0');
-		b++
-		}
-while
-	(a <= 'f') {
-		putchar(a);
-		a++
-	}
+for (num = 0; num < 10; num++)
+putchar((num % 10) + '0');
+for (letter = 'a'; letter <= 'f'; letter++)
+putchar(letter);
 putchar('\n');
 return (0);
 }
