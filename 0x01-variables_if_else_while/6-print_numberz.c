@@ -6,14 +6,9 @@
 
 int main(void)
 {
-int a;
-
-a = 0;
-while
-	(a < 10) {
-		putchar(a + '0');
-		a++;
-	}
+int num;
+for (num = 0; num < 10; num++)
+putchar((num % 10) + '0');
 putchar('\n');
 return (0);
 }
