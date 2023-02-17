@@ -13,12 +13,12 @@ a = 'g';
 b = 'G';
 while
 	(a <= 'z') {
-		putchar(c);
+		putchar(a);
 		a++;
 	}
 while
 	(b <= 'z') {
-		putchar(c);
+		putchar(a);
 		b++;
 	}
 return (0);
