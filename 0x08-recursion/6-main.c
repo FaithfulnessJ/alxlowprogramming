@@ -1,26 +1,30 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
- * evaluate_num - recursion loop
- * @num: num
- * @iterator: number to iterate
- * Return: return 1 or 0
+ * main - check the code
+ *
+ * Return: Always 0.
  */
-int evaluate_num(int num, int iterator)
+int main(void)
 {
-	if (iterator == num - 1)
-	{
-		return (1);
-	}
+int r;
 
-	else if (num % iterator == 0)
-	{
-		return (0);
-	}
-
-	if (num % iterator != 0)
-	{
-		return (evaluate_num(num, iterator + 1));
-	}
-
-	return (0);
+r = is_prime_number(1);
+printf("%d\n", r);
+r = is_prime_number(1024);
+printf("%d\n", r);
+r = is_prime_number(16);
+printf("%d\n", r);
+r = is_prime_number(17);
+printf("%d\n", r);
+r = is_prime_number(25);
+printf("%d\n", r);
+r = is_prime_number(-1);
+printf("%d\n", r);
+r = is_prime_number(113);
+printf("%d\n", r);
+r = is_prime_number(7919);
+printf("%d\n", r);
+return (0);
 }
